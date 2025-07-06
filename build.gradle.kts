@@ -17,12 +17,7 @@ subprojects {
 
 
 }
-tasks.register("printJavaVersion") {
-    doLast {
-        println("Java usado: " + System.getProperty("java.version"))
-        println("Java home: " + System.getProperty("java.home"))
-    }
-}
+
 
 
 dependencies {
