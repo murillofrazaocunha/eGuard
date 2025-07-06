@@ -4,7 +4,8 @@ repositories {
 }
 dependencies {
     implementation(project(":Commons"))
-    compileOnly(files("$projectDir/libs/velocity-proxy-3.4.0-SNAPSHOT-all.jar"))
+    compileOnly(files(rootDir.resolve("libs/velocity-proxy-3.4.0-SNAPSHOT-all.jar")))
+
 }
 java {
     toolchain {
@@ -16,11 +17,7 @@ val shadowImplementation by configurations.creating {
     extendsFrom(configurations.implementation.get())
     isCanBeResolved = true
 }
-tasks.register("printJavaVersion") {
-    doLast {
-        println("$projectDir/libs/velocity-proxy-3.4.0-SNAPSHOT-all.jar")
-    }
-}
+
 // configura o shadowJar
 tasks.named<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar>("shadowJar") {
     configurations = listOf(shadowImplementation)
