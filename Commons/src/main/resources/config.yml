@@ -1,0 +1,23 @@
+# Configuração do eGuard
+
+# Ativa ou desativa a proteção do eGuard
+protecao-ativada: true
+# Exibe informações extras no console (recomendado deixar false)
+modo-debug: false
+
+# Esses são os tokens válidos que os servidores Spigot vão aceitar.
+# Todos os tokens enviados pelo proxy devem estar aqui.
+tokens:
+  - "seu-token-aqui"
+
+# Configurações de Alerta
+alertas:
+  # Mostrar alertas de segurança no console
+  alertas-no-console: true
+  # Mensagem exibida no console ao detectar problema
+  mensagem-alerta: "[eGuard] Alerta: %detalhes%"
+  # Mensagens enviadas ao jogador se o token for inválido
+  mensagens-desconexao-token-invalido:
+    - "Conexão recusada: token inválido."
+    - "Seu servidor não está autorizado a conectar aqui."
+    - "Proteção eGuard: acesso bloqueado."

@@ -1,0 +1,7 @@
+{
+  "id": "eguard",
+  "name": "eGuard",
+  "version": "${project.version}",
+  "authors": ["mulinfrc"],
+  "main": "com.eomuhzin.guard.velocity.Velocity"
+}

@@ -1,0 +1,5 @@
+name: eGuard
+author: mulinfrc
+version: ${project.version}
+
+main: com.eomuhzin.guard.spigot.Spigot
