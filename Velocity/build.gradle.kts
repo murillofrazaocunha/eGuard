@@ -4,7 +4,7 @@ repositories {
 }
 dependencies {
     implementation(project(":Commons"))
-    compileOnly(files("$projectDir/libs"))
+    compileOnly(files("$projectDir/libs/velocity-proxy-3.4.0-SNAPSHOT-all.jar"))
 }
 java {
     toolchain {
